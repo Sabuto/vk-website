@@ -70,7 +70,7 @@ $white: #fff;
 
 .album {
   //min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
 }
@@ -98,4 +98,8 @@ footer {
   p {
     margin-bottom: .25rem;
   }
+}
+
+.img {
+  max-width: 100%;
 }

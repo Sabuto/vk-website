@@ -22,6 +22,11 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
     Route::get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
+
+    Route::resource('sites', 'SitesController');
+    Route::get('sites/{name}', 'SitesController@show');
+    Route::post('sites/{name}/photos', 'SitesController@addPhoto');
 });

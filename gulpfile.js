@@ -14,5 +14,6 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.sass('app.scss')
         .styles(['tether.min.css'], 'public/css/tether.css')
-        .scripts(['tether.min.js', 'bootstrap.min.js'], 'public/js/scripts.js');
+        .styles(['sweetalert.css', 'dropzone.css'], 'public/css/styles.css')
+        .scripts(['tether.min.js', 'bootstrap.min.js', 'sweetalert-dev.js', 'dropzone.js'], 'public/js/scripts.js');
 });
